@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Company1",
+    "code": "1",
+    "serviceId": "1",
+    "idNumber":"1",
+    "baCode": "1",
+    "subSegment":"1"
+
+  },
+  {
+    "name": "Company2",
+    "code": "2",
+    "serviceId": "2",
+    "idNumber":"2",
+    "baCode": "2",
+    "subSegment":"2"
+
+  },
+  {
+    "name": "Company3",
+    "code": "3",
+    "serviceId": "3",
+    "idNumber":"3",
+    "baCode": "3",
+    "subSegment":"3"
+
+  },
+  {
+    "name": "Company4",
+    "code": "4",
+    "serviceId": "4",
+    "idNumber":"4",
+    "baCode": "4",
+    "subSegment":"4"
+
+  },
+  {
+    "name": "Company5",
+    "code": "5",
+    "serviceId": "5",
+    "idNumber":"5",
+    "baCode": "5",
+    "subSegment":"5"
+
+  }
+]
