@@ -29,16 +29,16 @@ module.exports = function (app) {
         res.send({message:'Super Secret Code is ABC'})
     });
 
-    app.post('/signin',  function(req, res) {
-        if(req.query.username === 'abc'){
+    app.post('/signin1',  function(req, res) {
+        if(req.body.username === 'abc'){
             res.status(403)
             res.send(errorResponse)
             return
         }
         res.send({
             loggedIn:true,
-            username:req.query.username,
-            token:authentication.tokenForUser(req.query.username)
+            username:req.body.username,
+            token:authentication.tokenForUser(req.body.username)
         })
 
     });
