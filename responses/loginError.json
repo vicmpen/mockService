@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
   "loggedIn":false,
   "error":"login failed"
+=======
+  "error":"login failed",
+  "loggedIn":false
+>>>>>>> 6646d5733b227a235070432b3677b807efb90579
 }
