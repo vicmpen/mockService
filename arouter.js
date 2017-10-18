@@ -99,6 +99,55 @@ module.exports = function (app) {
 
         res.send(searchResult)
     });
+    app.get('/homeoffersearch',function(req,res){
+        if (authorize(req, res) === false) {
+            res.status(403)
+            res.send({message: 'Wrong token'})
+            return
+        }
+        res.send('')
+    })
+
+    app.get('/addressesdetails',function(req,res){
+        if (authorize(req, res) === false) {
+            res.status(403)
+            res.send({message: 'Wrong token'})
+            return
+        }
+        res.send('')
+    })
+    app.get('/billingaccountdetails',function(req,res){
+        if (authorize(req, res) === false) {
+            res.status(403)
+            res.send({message: 'Wrong token'})
+            return
+        }
+        res.send('')
+    })
+    app.delete('/service/:id',function(req,res){
+        if (authorize(req, res) === false) {
+            res.status(403)
+            res.send({message: 'Wrong token'})
+            return
+        }
+        res.send('')
+    })
+    app.post('/selectedservices',function(req,res){
+        if (authorize(req, res) === false) {
+            res.status(403)
+            res.send({message: 'Wrong token'})
+            return
+        }
+        res.send('')
+    })
+    app.get('',function(req,res){
+        if (authorize(req, res) === false) {
+            res.status(403)
+            res.send({message: 'Wrong token'})
+            return
+        }
+        res.send('')
+    })
 
 };
 
