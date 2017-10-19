@@ -108,6 +108,16 @@ module.exports = function (app) {
         res.send('')
     })
 
+    app.get('/companydetails/:id',function (req,res) {
+        if (authorize(req, res) === false) {
+            res.status(403)
+            res.send({message: 'Wrong token'})
+            return
+        }
+        const resultSet= companyDetails.filter(company=>company.code===req.params.id)
+        res.send(resultSet)
+    })
+
     app.get('/addressesdetails',function(req,res){
         if (authorize(req, res) === false) {
             res.status(403)
